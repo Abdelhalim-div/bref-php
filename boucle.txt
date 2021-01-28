@@ -1,0 +1,91 @@
+boucle
+**Exercice 1**
+Créer une variable et l'initialiser à 0. Tant que cette variable n'atteint pas 10 :
+
+=> l'afficher => incrémenter de 1
+
+<?php  
+for ($x = 1; $x < 10; $x++) {
+  echo " $x <br>";
+}
+?>  
+**Exercice 2**
+
+Créer deux variables. Initialiser la première à 0 et la deuxième avec un nombre compris en 1 et 100.
+ Tant que la première variable n'est pas supérieur à 20 :
+<?php
+$A=0;
+$B=50;
+for($i=0;$i<20;$i++){
+echo $A*$B."<br>";
+$A++;
+}
+
+?>
+
+**Exercice 3**
+Créer deux variables. Initialiser la première à 100 et la deuxième avec un nombre compris 
+en 1 et 100. Tant que la première variable n'est pas inférieur ou égale à 10
+<?php
+$var1=100;
+$var2=40;
+for($var1=100;$var1>10;$var1--){
+echo $var1*$var2."<br>";
+}
+**Exercice 4**
+
+Créer une variable et l'initialiser à 1. Tant que cette variable n'atteint pas 10 :
+
+=> l'afficher => l'incrementer de la moitié de sa valeur
+<?php
+
+for($ra=1;$ra<10; $ra=$ra+0.5){
+echo $ra ."<br>" ;
+}
+
+?>
+
+
+
+**Exercice 5**
+
+En allant de 1 à 15 avec un pas de 1, afficher le message On y arrive presque...
+<?php
+$var;
+
+for($var=1; $var<=15;$var++){
+echo $var . " on y arrive presque"."<br>" ;
+}
+
+?>
+**Exercice 6**
+
+En allant de 20 à 0 avec un pas de 1, afficher le message C'est presque bon...
+<?php
+$var;
+
+for($var=20; $var>=0;$var--){
+echo $var . " c'est presque bon"."<br>" ;
+}
+
+?>
+**Exercice 7**
+
+En allant de 1 à 100 avec un pas de 15, afficher le message On tient le bon bout...
+<?php
+$var;
+for($var=1;$var<=100;$var=$var+15){
+echo $var ."on tien le bon bout" ."<br>";
+}
+
+?>
+**Exercice 8**
+
+En allant de 200 à 0 avec un pas de 12, afficher le message Enfin ! ! !
+<?php
+$var;
+for($var=200;$var>=0;$var=$var-12){
+echo $var ."en fin !!!" ."<br>";
+}
+
+?>

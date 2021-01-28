@@ -1,0 +1,125 @@
+
+**Exercice 1**
+
+Faire une fonction qui retourne true.<?php
+function dady(){
+return "true" ;}
+echo dady();
+?>
+
+**Exercice 2**
+
+Faire une fonction qui prend en paramètre une chaine de caractères et qui retourne cette 
+même chaine.
+
+<?php
+function agham($ran){
+return $ran;
+}
+echo agham("hello");
+?>
+
+
+**Exercice 3**
+
+Faire une fonction qui prend en paramètre deux chaines de caractères et qui renvoit la concaténation de ces deux chaines.
+
+
+<?php
+function agham($ran){
+return $ran."<br>";
+}
+echo agham("hello");
+echo agham("salut");
+?>
+
+**Exercice 4**
+
+Faire une fonction qui prend en paramètre deux nombres. La fonction doit retourner :
+
+=> Le premier nombre est plus grand si le premier nombre est plus grand que 
+le deuxième => Le premier nombre est plus petit si le premier nombre est plus petit que 
+le deuxième => Les deux nombres sont identiques si les deux nombres sont égaux
+
+<?php
+function myfunction($amzwaro,$wisin){
+if($amzwaro>$wisin){
+
+$echo = "Le premier nombre est plus grand.";
+}elseif($amzwaro<$wisin){
+
+$echo = "Le premier nombre est plus petit.";
+}else {
+
+$echo ="Les deux nombres sont identiques.";
+}
+return $echo;
+}
+
+echo myfunction(5,2);
+
+?>
+**Exercice 5**
+
+Faire une fonction qui prend en paramètre un nombre et une chaine de caractères et qui
+ renvoit la concaténation de ces deux paramètres.
+
+<?php
+function chainNum($a,$b){
+return $a.$b;
+}
+echo chainNum("this is ",2021);
+?>
+
+**Exercice 6**
+
+Faire une fonction qui prend trois paramètres : nom, prenom et age. Elle doit renvoyer une chaine de la forme : "Bonjour" + nom + prenom + ", tu as " + age + "ans"
+<?php
+function agham($nom,$pre,$age){
+
+return "bonjour $nom $pre tu as $age ans";
+
+}
+echo agham("abdel","dady",26);
+?>
+
+**Exercice 7**
+
+<?php
+function agham($age,$genre){
+
+if ($age>=18){
+if($genre=="homme"){
+
+$type = "Vous êtes un homme et vous êtes majeur";
+}else{
+
+$type = "Vous êtes une femme et vous êtes majeur";
+}
+}else{
+
+if($genre==="homme"){
+$type ="Vous êtes un homme et vous êtes mineur";
+}else{
+$type= " Vous êtes une femme et vous êtes mineur";
+}
+}
+ return $type ;
+}
+
+echo agham(26,"homme");
+?>
+
+**Exercice 8**
+
+Faire une fonction qui prend en paramètre trois nombres et qui renvoit la somme de 
+ces nombres. Tous les paramètres doivent avoir une valeur par défaut.
+<?php
+function agham($amzwaro,$wisin){
+
+ return $amzwaro +  $wisin;
+}
+
+echo agham(14,68);
+
+?>

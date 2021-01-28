@@ -1,0 +1,168 @@
+**Exercice 1**
+
+Créer un tableau $mois et l'initialiser avec le nom des douze mois de l'année.
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$mois= array("Janvier" , "Février","mars","avril" ,"Mai","Juin","Juillet","Août");
+
+echo "we have" . $mois[0] . " <br> " . $mois[1] . " <br> " . $mois[2] . "<br>". $mois[3] . " <br> " . $mois[4] . " <br> ". $mois[5] . " <br> ";
+?>
+</body>
+</html>
+
+**Exercice 2**
+
+Avec le tableau de l'exercice 1, afficher la valeur de la troisième ligne de ce tableau.
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$mois= array("Janvier" , "Février","mars","avril" ,"Mai","Juin","Juillet","Août");
+
+echo $mois[2];
+?>
+</body>
+</html>
+
+**Exercice 3**
+
+Avec le tableau de l'exercice , afficher la valeur de l'index 5.
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$mois= array("Janvier" , "Février","mars","avril" ,"Mai","Juin","Juillet","Août");
+
+echo $mois[5];
+?>
+</body>
+</html>
+
+**Exercice 4**
+
+Avec le tableau de l'exercice 1, modifier le mois de aout pour lui ajouter 
+l'accent manquant.
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$mois= array("Janvier" , "Février","mars","avril" ,"Mai","Juin","Juillet","Août",
+"septembre","october","november","december");
+
+$mois[7]= "september";
+echo $mois [7];
+?>
+</body>
+</html>
+
+**Exercice 5**
+
+Créer un tableau associatif avec comme index le numéro des départements des Hauts de
+ France et en valeur leur nom.
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$mois= array("1"=>"halim","2"=>"mousa","3"=>"chafiq","4"=>"nourdin","5"=>"aimad");
+echo $mois[1];
+?>
+</body>
+</html>
+
+**Exercice 6**
+
+Avec le tableau de l'exercice 5, afficher la valeur de l'index 59.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$mois= array("1"=>"halim","2"=>"mousa","3"=>"chafiq","4"=>"nourdin","59"=>"aimad");
+echo $mois[59];
+?>
+</body>
+</html>
+
+**Exercice 7**
+
+Avec le tableau de l'exercice 5, ajouter la ligne correspondant au département de la 
+ville de Reims.
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$mois=array("1"=>"halim","2"=>"mousa","3"=>"chafiq","4"=>"nourdin","59"=>"aimad", "8"=>"Reims");
+echo $mois[8];
+?>
+</body>
+</html>
+**Exercice 8**
+
+Avec le tableau de l'exercice 1 et une boucle, afficher toutes les valeurs de ce tableau.
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$mois= array("Janvier"  , "Février","mars","avril" ,"Mai","Juin","Juillet","Août");
+
+foreach($mois as $month){
+echo $month."<br>";
+}
+
+
+?>
+</body>
+</html>
+
+**Exercice 9**
+
+Avec le tableau de l'exercice 5, afficher toutes les valeurs de ce tableau.
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$mois= array("1"=>"halim","2"=>"mousa","3"=>"chafiq","4"=>"nourdin","5"=>"aimad");
+foreach($mois as &$month){
+echo $month ."<br>";
+}
+?>
+</body>
+</html>
+
+</body>
+</html>
+**Exercice 10**
+
+Avec le tableau de l'exercice 5, afficher toutes les valeurs de ce tableau ainsi
+ que les clés associés. Cela pourra être, par exemple, de la forme : "Le département" + nom_departement + "a le numéro" + num_departement
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$nom= "pionner";
+$num= "0000019";
+$mois=array("1"=>"halim","2"=>"mousa","3"=>"chafiq","4"=>"nourdin","5"=>"aimad");
+foreach($mois as &$month){
+echo "$month ","in : group ","$nom "," number " ,"$num"  .".<br>";}
+
+?>
+</body>
+</html>
+
+</body>
+</html>
+
